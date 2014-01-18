@@ -1,0 +1,29 @@
+#coscreen_status_bar {
+	display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(53,53,53); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(53,53,53,1) 0%, rgba(20,20,20,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(53,53,53,1)), color-stop(100%,rgba(20,20,20,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(53,53,53,1) 0%,rgba(20,20,20,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(53,53,53,1) 0%,rgba(20,20,20,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(53,53,53,1) 0%,rgba(20,20,20,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(53,53,53,1) 0%,rgba(20,20,20,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353535', endColorstr='#141414',GradientType=0 ); /* IE6-9 */
+  padding: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  color: #ccc;
+  z-index: 999999999;
+	
+	#coscreen_session_label {
+		display: inline-block;
+		font-size: 13px;
+		margin-right: 3px;
+	}
+	
+	#coscreen_leave_room {
+		margin-top: 1px;
+	}
+}

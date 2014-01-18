@@ -1,0 +1,57 @@
+#coscreen_prompter {
+	display: none;
+  z-index: 9999999999;
+  position: fixed;
+  left: -341px;
+  top: 50%;
+	margin-top: -32px;
+	
+	&.coscreen_open {
+		left: 0;
+		
+		#coscreen_activation_wrapper {
+			left: 0;
+		}
+	}
+	
+	.coscreen_show_activate {
+		margin-left: 340px;
+	}
+	
+	#coscreen_activation_wrapper {
+	  position: fixed;
+	  left: -341px;
+	  top: 50%;
+		width: 300px;
+		background: #fff;
+		padding: 20px;
+		border-top: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		border-radius: 0 5px 5px 0;
+		margin-top: -50px;
+		font-size: 14px;
+		line-height: 19px;
+		min-height: 90px;
+		
+		#coscreen_cta {
+			color: #333;
+			font-size: 14px;
+			line-height: 20px;
+			margin-bottom: 20px;
+		}
+		
+		#coscreen_activation_code_form {
+			margin-top: 20px;
+			display: none;
+		}
+		
+		#coscreen_already_have {
+			font-size: 11px;
+			line-height: 15px;
+			color: #999;
+			margin-left: 5px;
+		}
+	}
+}

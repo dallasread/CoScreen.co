@@ -1,11 +1,11 @@
 module.exports = (grunt) ->
 	js_dependencies = ["dependencies/js/*.js"]
 	js_lib = ["lib/*.coffee"]
-	css_lib = ["assets/css/*.scss"]
+	css_lib = ["assets/css/main.scss"]
 	
 	grunt.initConfig
 		identifier: "<%= pkg.name %>-<%= version %>"
-		tmpjspkg: "tmp/<%= identifier %>.js"
+		tmpjspkg: "tmp/<%= version %>/<%= identifier %>.js"
 		version: "<%= pkg.version %>"
 		pkg: grunt.file.readJSON "package.json"
 		coffee:
@@ -15,11 +15,11 @@ module.exports = (grunt) ->
 		concat:
 			dist:
 				src: js_dependencies.concat(["<%= tmpjspkg %>"])
-				dest: "tmp/<%= identifier %>.js"
+				dest: "tmp/<%= version %>/<%= identifier %>.js"
 		sass:
 			dist:
 				src: css_lib
-				dest: "tmp/<%= identifier %>.css"
+				dest: "tmp/<%= version %>/<%= identifier %>.css"
 		uglify:
 			options:
 				banner: "/*! <%= identifier %>.min.js <%= grunt.template.today(\"dd-mm-yyyy\") %> */\n"
@@ -35,7 +35,7 @@ module.exports = (grunt) ->
 					"latest/<%= pkg.name %>.min.css": "<%= sass.dist.dest %>"
 					"versions/css/<%= identifier %>.min.css": "<%= sass.dist.dest %>"
 		watch:
-			files: js_dependencies.concat(js_lib)
+			files: js_dependencies.concat(js_lib).concat(["assets/css/*.scss"])
 			tasks: ["default"]
 
 	grunt.loadNpmTasks "grunt-contrib-coffee"
