@@ -1,0 +1,3 @@
+@CoScreen ||= {}
+CoScreen =
+	sendClick: true

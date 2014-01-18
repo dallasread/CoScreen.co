@@ -5,19 +5,19 @@
 ## What does CoScreen.co's MVP look like by January 26, 2014?
 
 ### Product
-- See what the other is statically viewing (HTML & CSS)
 - See what the other is typing
-- See where the other's mouse is
+- See what the other is statically viewing (HTML & CSS)
 - Use the smallest window's size
-- Click animation
-- Arrows showing where the other's mouse is
 - Time limit if no API Key
 - Loading bar when other user clicks
 - Resize suggestion
+√ Click animation
+√ Arrows showing where the other's mouse is
+√ See where the other's mouse is
 
 ### Marketing
-- Pay with Paypal
-- Wordpress plugin
+√ Pay with Paypal
+√ Wordpress plugin
 - Newsletter subscription
 - Great welcome email
 - Monthly newsletters
@@ -36,3 +36,4 @@
 - Live Chat
 - Website
 - Great JS support
+- Recording!
