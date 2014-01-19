@@ -1,6 +1,6 @@
 @CoScreen ||= {}
-CoScreen =
-	offlineEvents: ->
+CoScreen.general =
+	events: ->
 		CoScreen.$(document).on "click", ".coscreen_show_activate", ->
 			CoScreen.$("#coscreen_prompter").toggleClass "coscreen_open"
 			false
@@ -20,5 +20,5 @@ CoScreen =
 			false
 
 		CoScreen.$(document).on "click", "#coscreen_leave_room", ->
-			CoScreen.leaveRoom()
+			CoScreen.rooms.leave()
 			false

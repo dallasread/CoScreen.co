@@ -4,6 +4,7 @@ CoScreen.init = ->
 	CoScreen.$("body").append CoScreen.html.prompter
 	CoScreen.$("body").append CoScreen.html.statusBar
 	CoScreen.addStyles()
+	CoScreen.general.events()
 
 CoScreen.addStyles = ->
 	url = CoScreen.$("#cobrowser").data("stylesheet")

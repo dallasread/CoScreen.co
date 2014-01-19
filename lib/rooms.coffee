@@ -18,8 +18,8 @@ CoScreen.rooms =
 		CoScreen.$("#coscreen_status_bar").hide()
 	
 	connect: (roomToken = false) ->
-		$.cookie("coscreen_mouse", CoScreen.createToken(32)) unless $.cookie("coscreen_mouse")
-		CoScreen.roomToken = if roomToken then roomToken else CoScreen.createToken(5)
+		$.cookie("coscreen_mouse", CoScreen.rooms.createToken(32)) unless $.cookie("coscreen_mouse")
+		CoScreen.roomToken = if roomToken then roomToken else CoScreen.rooms.createToken(5)
 		CoScreen.me = $.cookie("coscreen_mouse")
 		
 		CoScreen.lastResize = 0
